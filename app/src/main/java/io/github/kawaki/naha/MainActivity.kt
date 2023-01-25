@@ -1,13 +1,16 @@
 package io.github.kawaki.naha
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+import io.github.kawaki.naha.databinding.ActivityMainBinding
+import io.github.kawaki.naha.presenter.base.BaseActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity<ActivityMainBinding>() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    override fun getViewBinding(): ActivityMainBinding {
+        return ActivityMainBinding.inflate(layoutInflater)
+    }
+
+    override fun setUpActivity() {
+        // TODO: Not yet implemented
     }
 
 }
