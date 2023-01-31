@@ -4,6 +4,7 @@ object Versions {
     const val appCompat: String = "1.6.0"
     const val material: String = "1.8.0"
     const val constraintLayout: String = "2.1.4"
+    const val navigation: String = "2.5.3"
 
 }
 

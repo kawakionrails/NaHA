@@ -8,11 +8,17 @@ object Libraries {
         "com.google.android.material:material:${Versions.material}"
     private const val constraintLayout: String =
         "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+    private const val navigationFragmentKtx: String =
+        "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    private const val navigationUiKtx: String =
+        "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     val libraries = ArrayList<String>().apply {
         add(coreKtx)
         add(appCompat)
         add(material)
         add(constraintLayout)
+        add(navigationFragmentKtx)
+        add(navigationUiKtx)
     }
 
 }
