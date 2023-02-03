@@ -12,6 +12,10 @@ object Libraries {
         "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     private const val navigationUiKtx: String =
         "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+    private const val hiltAndroid: String =
+        "com.google.dagger:hilt-android:${Versions.hilt}"
+    private const val hiltCompiler: String =
+        "com.google.dagger:hilt-compiler:${Versions.hilt}"
     val libraries = ArrayList<String>().apply {
         add(coreKtx)
         add(appCompat)
@@ -19,6 +23,8 @@ object Libraries {
         add(constraintLayout)
         add(navigationFragmentKtx)
         add(navigationUiKtx)
+        add(hiltAndroid)
+        add(hiltCompiler)
     }
 
 }

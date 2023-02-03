@@ -5,6 +5,7 @@ object Versions {
     const val material: String = "1.8.0"
     const val constraintLayout: String = "2.1.4"
     const val navigation: String = "2.5.3"
+    const val hilt: String = "2.44.2"
 
 }
 
