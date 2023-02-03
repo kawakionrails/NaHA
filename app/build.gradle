@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
 }
 
 android {
@@ -38,6 +40,13 @@ android {
 dependencies {
 
     implementation(Libraries.libraries)
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
     testImplementation(TestLibraries.testLibraries)
     androidTestImplementation(AndroidTestLibraries.androidTestLibraries)
+}
+
+kapt {
+    correctErrorTypes true
 }
