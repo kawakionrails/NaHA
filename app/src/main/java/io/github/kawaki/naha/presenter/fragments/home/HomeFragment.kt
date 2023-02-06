@@ -10,8 +10,6 @@ import io.github.kawaki.naha.presenter.base.BaseFragment
 @AndroidEntryPoint
 class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
-//    private val homeViewModel: HomeViewModel by viewModel()
-
     override fun getViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
