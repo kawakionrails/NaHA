@@ -8,6 +8,14 @@ object Libraries {
         "com.google.android.material:material:${Versions.material}"
     private const val constraintLayout: String =
         "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+    private const val fragmentKtx: String =
+        "androidx.fragment:fragment-ktx:${Versions.fragmentKtx}"
+    private const val legacySupportV4: String =
+        "androidx.legacy:legacy-support-v4:${Versions.legacySupportV4}"
+    private const val lifecycleLiveDataKtx: String =
+        "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
+    private const val lifecycleViewModelKtx: String =
+        "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     private const val navigationFragmentKtx: String =
         "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     private const val navigationUiKtx: String =
@@ -21,6 +29,10 @@ object Libraries {
         add(appCompat)
         add(material)
         add(constraintLayout)
+        add(fragmentKtx)
+        add(legacySupportV4)
+        add(lifecycleLiveDataKtx)
+        add(lifecycleViewModelKtx)
         add(navigationFragmentKtx)
         add(navigationUiKtx)
         add(hiltAndroid)
