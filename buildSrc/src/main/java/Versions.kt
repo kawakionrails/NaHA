@@ -24,3 +24,9 @@ object AndroidTestVersions {
     const val espressoCore: String = "3.5.0"
 
 }
+
+object KaptVersions {
+
+    const val hiltCompiler: String = "2.44.2"
+
+}

@@ -22,8 +22,6 @@ object Libraries {
         "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     private const val hiltAndroid: String =
         "com.google.dagger:hilt-android:${Versions.hilt}"
-    private const val hiltCompiler: String =
-        "com.google.dagger:hilt-compiler:${Versions.hilt}"
     val libraries = ArrayList<String>().apply {
         add(coreKtx)
         add(appCompat)
@@ -36,7 +34,6 @@ object Libraries {
         add(navigationFragmentKtx)
         add(navigationUiKtx)
         add(hiltAndroid)
-        add(hiltCompiler)
     }
 
 }
@@ -60,6 +57,16 @@ object AndroidTestLibraries {
     val androidTestLibraries = ArrayList<String>().apply {
         add(jUnit)
         add(espressoCore)
+    }
+
+}
+
+object KaptLibraries {
+
+    private const val hiltCompiler: String =
+        "com.google.dagger:hilt-compiler:${KaptVersions.hiltCompiler}"
+    val kaptLibraries = ArrayList<String>().apply {
+        add(hiltCompiler)
     }
 
 }
